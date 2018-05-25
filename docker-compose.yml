@@ -1,0 +1,12 @@
+version: "3"
+services:
+  web:
+    build: .
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - "5000:5000" # Serve
+      - "3000:3000" # React App
+      - "9009:9009" # Storybook
+    privileged: true
