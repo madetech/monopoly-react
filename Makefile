@@ -4,9 +4,9 @@ serve:
 test:
 	docker-compose run --rm web npm test
 
-install-package:
-ifdef name
-		docker-compose run --rm web npm install $(name)
+npm:
+ifdef cmd
+		docker-compose run --rm web npm $(cmd)
 else
-		echo "Usage: install-package name=<name>"
+		echo "Usage: cmd=<command>"
 endif
