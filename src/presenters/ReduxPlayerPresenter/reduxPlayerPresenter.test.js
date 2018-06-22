@@ -1,6 +1,6 @@
 import ReduxPlayerPresenter from '.'
 
-describe('redux player presenter', () => {
+xdescribe('redux player presenter', () => {
   describe('dispatches an action' , () => {
     it('with the name "Kyle"', () => {
       const spyStore = { dispatch: jest.fn() }

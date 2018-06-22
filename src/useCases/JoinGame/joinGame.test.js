@@ -1,6 +1,6 @@
 import JoinGame from '.'
 
-describe('join game', () => {
+xdescribe('join game', () => {
   describe('passes the name to the presenter', () => {
     it('Example one', () => {
       let spyPresenter = { present: jest.fn() }
